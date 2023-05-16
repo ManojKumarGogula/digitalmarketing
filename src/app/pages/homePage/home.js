@@ -9,6 +9,7 @@ import pwaIcon from "../../asserts/icons/pwa.svg";
 import vIcon from "../../asserts/icons/v.svg";
 import sassIcon from "../../asserts/icons/sass.svg";
 import manIcon from "../../asserts/icons/man.svg";
+import Footer from "../../components/Footer";
 const HomePage = () => {
   const imagesData = [
     {
@@ -78,8 +79,10 @@ const HomePage = () => {
   return (
     <div className="w-[100%]">
       <Header />
-      <div className="w-[100%] h-[90vh] mt-[10vh]">
+      <div className="w-[100%] mt-[10vh]">
+        <div className="w-[100%] h-[90vh]">
         <img src={manImage} className=" w-full h-full object-fill" />
+        </div>
         <div className="absolute w-[100vw] md:w-[60vw] top-[15vh] md:top-[40vh] xl:top-[40vh]  text-24 xl:text-40 bg-imgtrans text-bluebg font-700 opacity-60  p-[2vw] md:p-[6vh] xl:p-[6vh]">
           <div className="flex flex-row md:flex-col xl:flex-col justify-center">
             <div>We are&nbsp;</div>
@@ -89,10 +92,10 @@ const HomePage = () => {
             Helping you stand out in a crowded market
           </div>
         </div>
-        <div className="bg-imgtrans text-bluebg py-[20vh] ">
+        <div className="bg-imgtrans text-bluebg pt-[10vh] pb-[2vh] ">
           <div className="flex flex-col mx-auto w-[90%] font-400">
             <div>WHO WE ARE</div>
-            <div className="font-900 text-24 md:text-40 xl:text-60 my-10">
+            <div className="font-900 text-20 md:text-40 xl:text-60 my-10">
               We are Extensive.
             </div>
             <div className="w-5/6 text-16 text-justify my-10">
@@ -131,7 +134,10 @@ const HomePage = () => {
               <div className="flex flex-row flex-wrap">
                 {imagesData.map((item, index) => {
                   return (
-                    <div key={index} className=" w-full md:w-[30vw] xl:w-[35vw] m-20 text-imgtrans">
+                    <div
+                      key={index}
+                      className=" w-full md:w-[30vw] xl:w-[35vw] m-20 text-imgtrans"
+                    >
                       <img src={item.img} className="w-full object-cover" />
                       <div className="text-redText text-12">
                         DIGITAL MARKETING
@@ -168,7 +174,7 @@ const HomePage = () => {
               <div className="text-bluebg font-700 text-20 md:text-56">
                 Testimonials
               </div>
-              <div className="w-[80vw] border-border border-1 rounded-8 flex flex-row items-center my-[2vh]">
+              <div className="w-[80vw] border-border shadow-10 border-1 rounded-8 flex flex-row items-center my-[2vh]">
                 <img src={manIcon} className=" w-[20vw] xL:w-[10vw] ml-[2vw]" />
                 <div className="flex flex-col">
                   <span className="font-400 text-12 md:text-40 xl:text-40">
@@ -177,7 +183,9 @@ const HomePage = () => {
                   <div className="flex flex-row items-center">
                     <div className="h-2 w-[10vw] bg-bluebg ml-auto mr-[2vw]"></div>
                     <div>
-                      <div className="text-12 md:text-56 xl:text-56">Hershel</div>
+                      <div className="text-12 md:text-56 xl:text-56">
+                        Hershel
+                      </div>
                       <div className="text-redText text-10 w-4/6">
                         Head of director GGPL PVT LTD.
                       </div>
@@ -194,6 +202,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      <Footer />
       </div>
     </div>
   );

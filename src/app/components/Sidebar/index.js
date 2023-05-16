@@ -12,20 +12,16 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
     zIndex: 99,
+    [theme.breakpoints.up('sm')]: {
+      width: "100%",
+    },
   },
-  [theme.breakpoints.up("sm")]: {
-    width: "70%",
-  },
-
-  //   [theme.breakpoints.up("md")]: {
-  //     width: "30%",
-  //   },
-  //   [theme.breakpoints.up("lg")]: {
-  //     width: "30%",
-  //   },
   drawerPaper: {
     width: drawerWidth,
     backgroundColor: "#301E4E",
+    [theme.breakpoints.up('sm')]: {
+      width: "100%",
+    },
   },
   button: {
     backgroundColor: "#FF6E6C",

@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="flex flex-col  justify-center p-[2vh] ">
       <div className="flex flex-col md:flex-row xl:flex-row xl:items-center w-[80vw] mx-auto text-12">
         <div className="text-28">Logo</div>
-        <div className="grid  grid-cols-2 md:grid-cols-3 xl:grid-cols-6 text-start  w-[80vw] md:w-[50vw] xl:w-[50vw] my-8 mx-auto ">
+        <div className="grid  grid-cols-2 md:grid-cols-3 xl:grid-cols-6 text-start  w-[80vw] md:w-[60vw] xl:w-[50vw] my-8 mx-auto ">
           {keys.map((item, index) => {
             return (
               <div key={index} className="xl:mx-auto">
@@ -26,7 +26,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div className="flex flex-row w-[50vw] xl:w-[10vw]  mx-auto xl:ml-auto">
+        <div className="flex flex-row w-[50vw] md:w-[10vw] xl:w-[10vw]  mx-auto xl:ml-auto">
           {icons.map((item, index) => {
             return (
               <div key={index} className="mx-auto">

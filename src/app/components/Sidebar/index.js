@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Drawer } from "@material-ui/core";
 import closeIcon from "../../asserts/icons/closeIcon.svg";
-const drawerWidth = "30%";
+const drawerWidth = "100%";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,14 +13,14 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
     zIndex: 99,
     [theme.breakpoints.up('sm')]: {
-      width: "100%",
+      width: "30%",
     },
   },
   drawerPaper: {
     width: drawerWidth,
     backgroundColor: "#301E4E",
     [theme.breakpoints.up('sm')]: {
-      width: "100%",
+      width: "30%",
     },
   },
   button: {

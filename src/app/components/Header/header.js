@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute w-full top-0 bg-primary-light py-16 text-blackText font-400 text-18">
+    <header className="absolute w-full top-0 bg-imgtrans py-16 text-bluebg font-400 text-18">
       <nav className=" w-5/6 flex items-center justify-between px-4 mx-auto max-w-7xl">
         <div>
           <a href="/" className="text-white text-lg font-bold">

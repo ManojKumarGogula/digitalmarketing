@@ -81,18 +81,18 @@ const HomePage = () => {
       <Header />
       <div className="w-[100%] mt-[10vh]">
         <div className="w-[100%] h-[90vh]">
-        <img src={manImage} className=" w-full h-full object-fill" />
+          <img src={manImage} className=" w-full h-full object-fill" />
         </div>
         <div className="absolute w-[100vw] md:w-[60vw] top-[15vh] md:top-[40vh] xl:top-[40vh]  text-24 xl:text-40 bg-imgtrans text-bluebg font-700 opacity-60  p-[2vw] md:p-[6vh] xl:p-[6vh]">
-        <div className="flex flex-col items-center xl:items-start">
-          <div className="flex flex-row md:flex-col xl:flex-col justify-center">
-            <div>We are&nbsp;</div>
-            <div className="text-redText">Extensive</div>
-          </div>
-        
-          <div className="text-8 md:text-20 xl:text-20 xl:w-[30vw]">
-            Helping you stand out in a crowded market
-          </div>
+          <div className="flex flex-col items-center md:items-start xl:items-start">
+            <div className="flex flex-row md:flex-col xl:flex-col justify-center">
+              <div>We are&nbsp;</div>
+              <div className="text-redText">Extensive</div>
+            </div>
+
+            <div className="text-8 md:text-20 xl:text-20 xl:w-[30vw]">
+              Helping you stand out in a crowded market
+            </div>
           </div>
         </div>
         <div className="bg-imgtrans text-bluebg pt-[10vh] pb-[2vh] ">
@@ -127,7 +127,9 @@ const HomePage = () => {
               <div>Digital Marketing </div>
 
               <div>Digital Marketing </div>
-              <button className="bg-bluebg text-imgtrans text-12 p-3 px-8 rounded-4 md:rounded-8 xl:rounded-8 hover:bg-redText">View All</button>
+              <button className="bg-bluebg text-imgtrans text-12 p-3 px-8 rounded-4 md:rounded-8 xl:rounded-8 hover:bg-redText">
+                View All
+              </button>
             </div>
           </div>
           <div className="bg-bluebg">
@@ -146,8 +148,12 @@ const HomePage = () => {
                       <div className="text-redText text-8 md:text-10 xl:text-12 my-4">
                         DIGITAL MARKETING
                       </div>
-                      <div className="text-18 md:text-20 xl:text-24">{item.title}</div>
-                      <div className="text-10 md:text-12 xl:text-14">{item.sub}</div>
+                      <div className="text-18 md:text-20 xl:text-24">
+                        {item.title}
+                      </div>
+                      <div className="text-10 md:text-12 xl:text-14">
+                        {item.sub}
+                      </div>
                     </div>
                   );
                 })}
@@ -178,7 +184,7 @@ const HomePage = () => {
               <div className="text-bluebg font-700 text-20 md:text-56">
                 Testimonials
               </div>
-              <div className="w-[80vw] border-border shadow-10 border-1 rounded-8 flex flex-row items-center my-[4vh]">
+              <div className="w-[80vw] border-border shadow-10 border-1 rounded-8 flex flex-row items-center my-[4vh] hover:scale-110">
                 <img src={manIcon} className=" w-[20vw] xL:w-[10vw] ml-[2vw]" />
                 <div className="flex flex-col">
                   <span className="font-400 text-12 md:text-40 xl:text-36">
@@ -200,13 +206,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className="bg-bluebg py-[4vh]">
-            <div className="text-blueText text-20 md:text-44 xl:text-44 font-700 w-full md:w-3/6 xl:w-3/6 ml-[10vw]">
+            <div className="text-blueText text-20 md:text-44 xl:text-44 font-700  md:w-3/6 xl:w-3/6 ml-[10vw]">
               Looking to drive results?{" "}
               <span className="text-orangeText">Lets chat</span>
             </div>
           </div>
         </div>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );

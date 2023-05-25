@@ -117,7 +117,7 @@ const HomePage = () => {
   };
   const renderWhatweDO = () => {
     return (
-      <div className="flex flex-col md:flex-row xl:flex-row  justify-around my-[4vh] xl:my-[8vh]">
+      <div className="w-[95vw] flex flex-col md:flex-row xl:flex-row  justify-around my-[4vh] xl:my-[8vh]">
         <div className="bg-roundedboxbg p-[3vw] xl:rounded-tl-[10vw] ">
           <div className="font-700 text-24 md:text-36 xl:text-60">
             WHAT
@@ -199,17 +199,17 @@ const HomePage = () => {
           <div className="text-bluebg font-700 text-24 md:text-40 xl:text-60">
             Testimonials
           </div>
-          <div className="w-[80vw] border-border shadow-10 border-1 rounded-8 flex flex-col md:flex-row xl:flex-row justify-center items-center my-[4vh] hover:scale-110">
+          <div className="w-[80vw] border-border my-[10vh] shadow-10 border-1 rounded-8 flex flex-col md:flex-row xl:flex-row md:justify-center xl:justify-center items-center hover:scale-110">
             <img src={manIcon} className=" w-[20vw] xL:w-[10vw] ml-[2vw]" />
             <div className="flex flex-col">
               <span className="font-400 text-10 md:text-[1.8rem] xl:text-36">
                 “Working with Extensive is great”
               </span>
-              <div className="flex flex-row items-center">
-                <div className="h-2 w-[10vw] bg-bluebg ml-auto mr-[2vw]"></div>
+              <div className="flex flex-row items-center ">
+                <div className="h-2 w-[2vw] md:[10vw] xl:w-[10vw] bg-bluebg ml-auto mr-[2vw] -mt-10 md:mt-0 xl:mt-0"></div>
                 <div>
                   <div className="text-[0.9rem] md:text-[2.2rem] xl:text-28">Hershel</div>
-                  <div className="text-redText text-8 md:text-14 xl:text-16 w-4/6">
+                  <div className="text-redText text-8 md:text-14 xl:text-16 md:w-4/6 xl:w-4/6">
                     Head of director GGPL PVT LTD.
                   </div>
                 </div>

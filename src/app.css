@@ -6,6 +6,7 @@ body {
 	font-size: 16px;
 	background-color: #161929;
 	color: aliceblue;
+	font-family: "Playfair Display"
 }
 
 ::-webkit-scrollbar {
@@ -20,5 +21,24 @@ body {
   ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 10px rgb(67, 155, 49);
+  }
+  
+
+  @keyframes color-fill {
+	from {
+	  color: transparent;
+	}
+	to {
+	  color: inherit;
+	}
+  }
+  
+  .colored-word {
+	display: inline-block;
+	font-size: xx-large;
+  }
+  
+  .colored-letter {
+	animation: color-fill 0.2s linear forwards;
   }
   

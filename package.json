@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --mode development",
+    "start": "webpack serve --mode development --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
@@ -24,11 +24,14 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.10",
     "@mui/styled-engine": "^5.11.9",
+    "@mui/styles": "^5.13.1",
     "@tailwindcss/line-clamp": "^0.4.2",
+    "dotenv-webpack": "^8.0.1",
     "file-loader": "^6.2.0",
     "postcss-loader": "^7.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^6.8.1",
     "style-loader": "^3.3.1"
   },

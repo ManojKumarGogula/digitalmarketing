@@ -15,10 +15,12 @@ const defaultOptions = {
 const App = () => {
   const [loading, setLoading] = useState(true);
   const letters = "Marketing".split('');
+  const number=Math.floor(Math.random() * 5)*100;
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 0);
+    // scrollTo(0)
   });
 
   if (loading)

@@ -79,17 +79,17 @@ const HomePage = () => {
   const renderImageBanner = () => {
     return (
       <>
-        <div className="w-[100%] h-[90vh]">
-          <img src={manImage} className=" w-full h-full object-fill" />
+        <div className="w-[100%] h-[100vh]">
+          <img src={manImage} className=" w-full h-full xl:object-fill " />
         </div>
-        <div className="absolute w-[100vw] md:w-[60vw] top-[15vh] md:top-[40vh] xl:top-[40vh]  text-24 xl:text-40 bg-imgtrans text-bluebg font-700 opacity-60  p-[2vw] md:p-[6vh] xl:p-[6vh]">
+        <div className="absolute w-[100vw] md:w-[60vw] top-[15vh] md:top-[40vh] xl:top-[30vh]  text-24 md:text-40 xl:text-60  bg-imgtrans text-bluebg font-700 opacity-60  p-[2vw] md:p-[6vh] xl:p-[6vh]">
           <div className="flex flex-col items-center md:items-start xl:items-start">
             <div className="flex flex-row md:flex-col xl:flex-col justify-center">
               <div>We are&nbsp;</div>
               <div className="text-redText">Extensive</div>
             </div>
 
-            <div className="text-8 md:text-20 xl:text-20 xl:w-[30vw]">
+            <div className="text-[0.9rem] md:text-20 xl:text-28 xl:w-[30vw]">
               Helping you stand out in a crowded market
             </div>
           </div>
@@ -99,17 +99,17 @@ const HomePage = () => {
   };
   const renderBook = () => {
     return (
-      <div className="flex flex-col mx-auto w-[90%] font-400">
-        <div>WHO WE ARE</div>
-        <div className="font-900 text-20 md:text-40 xl:text-60 my-10">
+      <div className="flex flex-col mx-auto w-[90%] font-400 py-[10vh]">
+        <div className="text-10 md:text-16 xl:text-16">WHO WE ARE</div>
+        <div className="font-900 text-24 md:text-40 xl:text-60 my-10">
           We are Extensive.
         </div>
-        <div className="w-full md:w-5/6 xl:w-5/6 text-8 xl:text-16 text-justify mb-10">
+        <div className="w-full md:w-[95%] xl:w-[95%] text-10 md:text-16 xl:text-20 text-justify mb-10">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </div>
-        <div className="bg-bluebg p-[1vw] relative w-[80%] md:w-[25vw] xl:w-[20vw] text-imgtrans text-center rounded-4 xl:rounded-8 my-10 hover:bg-redText hover:text-imgtrans">
+        <div className="bg-bluebg py-[2vh] px-[3vw] relative w-[84%] md:w-[40vw] xl:w-[23vw] text-imgtrans text-center rounded-4 xl:rounded-8 my-[4vh] hover:bg-redText hover:text-imgtrans">
           BOOK A FREE MARKETING AUDIT
         </div>
       </div>
@@ -119,21 +119,21 @@ const HomePage = () => {
     return (
       <div className="flex flex-col md:flex-row xl:flex-row  justify-around my-20">
         <div className="bg-roundedboxbg p-[3vw] xl:rounded-tl-[10vw] ">
-          <div className="font-700 text-24 md:text-36 xl:text-40">
+          <div className="font-700 text-24 md:text-36 xl:text-60">
             WHAT
             <div>WE DO.</div>
           </div>
-          <div className="w-full text-8 xl:text-16 xl:w-3/6">
+          <div className="w-full text-8 xl:text-20 xl:w-3/6">
             We do lots of stuffs , basically adding value to your product .
           </div>
         </div>
         <div className="ml-[4vw]  xl:mr-[0vw] text-20 md:text-24 xl:text-36">
-          <div>Digital Marketing </div>
-          <div>Digital Marketing </div>
+          <div className="my-[4vh]">Digital Marketing </div>
+          <div className="my-[4vh]">Digital Marketing </div>
 
-          <div>Digital Marketing </div>
+          <div className="my-[4vh]">Digital Marketing </div>
 
-          <div>Digital Marketing </div>
+          <div className="my-[4vh]">Digital Marketing </div>
           <button className="bg-bluebg text-imgtrans text-12 p-3 px-8 rounded-4 md:rounded-8 xl:rounded-8 hover:bg-redText">
             View All
           </button>

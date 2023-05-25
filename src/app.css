@@ -6,7 +6,8 @@ body {
 	font-size: 16px;
 	background-color: #161929;
 	color: aliceblue;
-	font-family: "Playfair Display"
+	font-family: "Playfair Display";
+	font-weight: 400;
 }
 
 ::-webkit-scrollbar {

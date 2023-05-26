@@ -200,16 +200,16 @@ const HomePage = () => {
             Testimonials
           </div>
           <div className="w-[80vw] border-border my-[10vh] shadow-10 border-1 rounded-8 flex flex-col md:flex-row xl:flex-row md:justify-center xl:justify-center items-center hover:scale-110">
-            <img src={manIcon} className=" w-[20vw] xL:w-[10vw] ml-[2vw]" />
-            <div className="flex flex-col">
-              <span className="font-400 text-10 md:text-[1.8rem] xl:text-36">
+            <img src={manIcon} className=" w-[20vw] xl:w-[10vw] ml-[2vw]" />
+            <div className="flex flex-col w-full">
+              <span className="font-400 text-10 md:text-[1.8rem] xl:text-36 mx-auto">
                 “Working with Extensive is great”
               </span>
-              <div className="flex flex-row items-center ">
+              <div className="flex flex-row items-center mr-auto ml-[8vw] md:mr-0 md:ml-auto xl:mr-0 xl:ml-auto ">
                 <div className="h-2 w-[2vw] md:[10vw] xl:w-[10vw] bg-bluebg ml-auto mr-[2vw] -mt-10 md:mt-0 xl:mt-0"></div>
-                <div>
+                <div >
                   <div className="text-[0.9rem] md:text-[2.2rem] xl:text-28">Hershel</div>
-                  <div className="text-redText text-8 md:text-14 xl:text-16 md:w-4/6 xl:w-4/6">
+                  <div className="text-redText text-8 md:text-12 xl:text-16 md:w-4/6 xl:w-4/6">
                     Head of director GGPL PVT LTD.
                   </div>
                 </div>
@@ -224,7 +224,7 @@ const HomePage = () => {
   const renderChat = () => {
     return (
       <div className="bg-bluebg py-[4vh]">
-        <div className="text-blueText text-20 md:text-44 xl:text-44 font-700  md:w-3/6 xl:w-3/6 ml-[10vw]">
+        <div className="text-blueText text-24 md:text-40 xl:text-60 font-700  md:w-3/6 xl:w-3/6 ml-[10vw]">
           Looking to drive results?{" "}
           <span className="text-orangeText">Lets chat</span>
         </div>

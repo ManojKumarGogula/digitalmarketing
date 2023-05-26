@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 4000);
     // scrollTo(0)
   });
 

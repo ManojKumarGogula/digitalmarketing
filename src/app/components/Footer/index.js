@@ -36,7 +36,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="mx-auto my-8">Copyright@2023</div>
+      <div className="mx-auto my-14">Copyright@2023</div>
     </div>
   );
 };

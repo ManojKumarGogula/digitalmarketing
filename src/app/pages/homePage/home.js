@@ -10,6 +10,7 @@ import vIcon from "../../asserts/icons/v.svg";
 import sassIcon from "../../asserts/icons/sass.svg";
 import manIcon from "../../asserts/icons/man.svg";
 import Footer from "../../components/Footer";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const HomePage = () => {
   const imagesData = [
     {
@@ -80,7 +81,8 @@ const HomePage = () => {
     return (
       <>
         <div className="w-[100%] h-[100vh]">
-          <img src={manImage} className=" w-full h-full xl:object-fill " />
+    
+          <LazyLoadImage src={manImage} className=" w-full h-full xl:object-fill " />
         </div>
         <div className="absolute w-[100vw] md:w-[60vw] top-[15vh] md:top-[40vh] xl:top-[30vh]  text-24 md:text-40 xl:text-60  bg-imgtrans text-bluebg font-700 opacity-60  p-[2vw] md:p-[6vh] xl:p-[6vh]">
           <div className="flex flex-col items-center md:items-start xl:items-start">
@@ -117,16 +119,17 @@ const HomePage = () => {
   };
   const renderWhatweDO = () => {
     return (
-      <div className="w-[95vw] flex flex-col md:flex-row xl:flex-row  justify-around my-[4vh] xl:my-[8vh]">
-        <div className="bg-roundedboxbg p-[3vw] xl:rounded-tl-[10vw] ">
+      <div className="w-full md:w-[95vw] xl:w-[95vw] flex flex-col md:flex-row xl:flex-row  justify-around my-[4vh] xl:my-[8vh]">
+             <div className="bg-roundedboxbg w-full md:w-[50vw] xl:w-[40vw] p-[3vw] md:rounded-tl-[30vw] md:rounded-tr-[90vw] md:rounded-br-[25vw] md:rounded-bl-[40vw] md:-ml-[10vw] xl:rounded-tl-[30vw] xl:rounded-tr-[90vw] xl:rounded-br-[25vw] xl:rounded-bl-[40vw] xl:-ml-[10vw] ">
           <div className="font-700 text-24 md:text-36 xl:text-60">
             WHAT
             <div>WE DO.</div>
           </div>
-          <div className="w-full text-[0.78rem] xl:text-20 xl:w-3/6">
+          <div className="w-full text-[0.78rem] xl:text-20 xl:w-5/6">
             We do lots of stuffs , basically adding value to your product .
           </div>
         </div>
+
         <div className="ml-[4vw]  xl:mr-[0vw] text-20 md:text-[2.2rem] xl:text-36 font-700 md:font-400 xl:font-400">
           <div className="my-[4vh]">Digital Marketing </div>
           <div className="my-[4vh]">Digital Marketing </div>
@@ -155,7 +158,7 @@ const HomePage = () => {
                   key={index}
                   className=" w-full md:w-[40vw] xl:w-[40vw] my-20 md:m-20  text-imgtrans"
                 >
-                  <img src={item.img} className="w-full object-cover" />
+                  <LazyLoadImage src={item.img} className="w-full object-cover" />
                   <div className="text-redText text-8 md:text-10 xl:text-[1.1rem] my-4">
                     DIGITAL MARKETING
                   </div>
@@ -190,7 +193,7 @@ const HomePage = () => {
                   key={index}
                   className="flex w-[8vw] flex-col items-center mx-auto my-20 text-10 md:text-16 xl:text-[2.2rem]"
                 >
-                  <img src={item.img} />
+                  <LazyLoadImage src={item.img} />
                   <div>{item.title}</div>
                 </div>
               );
@@ -200,15 +203,17 @@ const HomePage = () => {
             Testimonials
           </div>
           <div className="w-[80vw] border-border my-[10vh] shadow-10 border-1 rounded-8 flex flex-col md:flex-row xl:flex-row md:justify-center xl:justify-center items-center hover:scale-110">
-            <img src={manIcon} className=" w-[20vw] xl:w-[10vw] ml-[2vw]" />
+            <LazyLoadImage src={manIcon} className=" w-[20vw] xl:w-[10vw] ml-[2vw]" />
             <div className="flex flex-col w-full">
               <span className="font-400 text-10 md:text-[1.8rem] xl:text-36 mx-auto">
                 “Working with Extensive is great”
               </span>
               <div className="flex flex-row items-center mr-auto ml-[8vw] md:mr-0 md:ml-auto xl:mr-0 xl:ml-auto ">
                 <div className="h-2 w-[2vw] md:[10vw] xl:w-[10vw] bg-bluebg ml-auto mr-[2vw] -mt-10 md:mt-0 xl:mt-0"></div>
-                <div >
-                  <div className="text-[0.9rem] md:text-[2.2rem] xl:text-28">Hershel</div>
+                <div>
+                  <div className="text-[0.9rem] md:text-[2.2rem] xl:text-28">
+                    Hershel
+                  </div>
                   <div className="text-redText text-8 md:text-12 xl:text-16 md:w-4/6 xl:w-4/6">
                     Head of director GGPL PVT LTD.
                   </div>

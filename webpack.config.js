@@ -1,21 +1,13 @@
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "build"),
-    filename: "js/main.[contenthash].js",
-    chunkFilename: "js/[name].[contenthash].js",
     publicPath: "/",
   },
   resolve: {
     extensions: [".js"],
-    alias: {
-      app: path.join(__dirname, "src", "app"),
-      src: path.join(__dirname, "src"),
-    },
   },
   module: {
     rules: [
@@ -52,7 +44,7 @@ module.exports = {
         test: /\.svg$/,
         use: [
           {
-            loader: 'svg-url-loader',
+            loader: "svg-url-loader",
             options: {
               limit: 8192, // Optional: Set the size limit for inlining the SVG as a data URL
             },
@@ -66,10 +58,6 @@ module.exports = {
       template: "./public/index.html",
       filename: "index.html",
     }),
-    new MiniCssExtractPlugin({
-      filename: "assets/[name].css",
-    }),
-    new Dotenv(),
   ],
   devServer: {
     port: 3000,

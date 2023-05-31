@@ -193,8 +193,8 @@ const HomePage = () => {
                   key={index}
                   className="flex w-[8vw] flex-col items-center mx-auto my-20 text-10 md:text-16 xl:text-[2.2rem]"
                 >
-                  <LazyLoadImage src={item.img} />
-                  <div>{item.title}</div>
+                  <LazyLoadImage src={item.img} className="h-[10vh]" />
+                  <div className="flex items-end">{item.title}</div>
                 </div>
               );
             })}

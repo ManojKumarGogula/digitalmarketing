@@ -47,7 +47,7 @@ const DrawerComponent = (props) => {
           paper: classes.drawerPaper,
         }}
       >
-        <div className="text-24 flex flex-col justify-center h-screen ml-[4vw] text-imgtrans font-400">
+        <div className="text-24 md:text-[2.6rem] xl:text-36 flex flex-col justify-center h-screen ml-[4vw] text-imgtrans font-400">
           <div
             className="absolute top-[6vh] right-[3vw]"
             onClick={handleDrawerToggle}
